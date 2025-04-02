@@ -1,56 +1,54 @@
-# MovieWeb
-A web-based movie streaming platform supporting HLS + Video.js, multi-language, light/dark themes, and AI-powered recommendations.
+# MovieWeb App (Flutter)
+A Flutter-based movie streaming application that interacts with a Java Spring Boot backend. This app handles UI rendering while the backend manages API processing and business logic.
 
 ## Technologies
-- **Backend**: Spring Boot, AWS Services  
-- **Frontend**: Video.js, HLS  
-- **Database**: MySQL  
-- **Cloud Services**: AWS S3  
+- **Frontend**: Flutter (Dart)
+- **Backend**: Java Spring Boot
+- **Streaming**: HLS + Video.js
+- **Database**: MySQL
+- **Cloud Storage**: AWS S3
 
 ## Setup Instructions
 
-### 1. Database Setup
-Ensure MySQL is installed and running. Then, execute the provided SQL script:
+### 1. Prerequisites
+Ensure the following are installed:
+- Flutter SDK ([Installation Guide](https://flutter.dev/docs/get-started/install))
+- Android Studio / Visual Studio Code (with Flutter & Dart plugins)
+- A physical device or emulator for testing
 
+### 2. Clone the Repository
 ```sh
-mysql -u root -p < path/to/setup_script.sql
+git clone https://github.com/your-repo/movieweb_flutter.git
+cd movieweb_flutter
 ```
 
-### 2. Build & Run the Project
-Using Maven:
-
+### 3. Install Dependencies
 ```sh
-mvn clean install
+flutter pub get
 ```
 
-If dependencies are missing, reload Maven:
+### 4. Configure API Endpoint
+Modify the `lib/config.dart` file to set up the API base URL:
+```dart
+const String API_BASE_URL = "https://your-backend-url.com/api";
+```
 
+### 5. Run the Application
+For Android:
 ```sh
-mvn dependency:resolve
+flutter run
 ```
-
-Running the application:
-
+For iOS:
 ```sh
-mvn spring-boot:run
+flutter run --release
 ```
 
-### 3. AWS S3 Key Setup
-This project requires AWS credentials to access S3. Contact the project maintainer to obtain the necessary keys.
-
-After obtaining the keys, set them up in your `.env` file:
-
-```env
-AWS_ACCESS_KEY=your-access-key
-AWS_SECRET_KEY=your-secret-key
-```
+## API Integration
+This app communicates with a backend that provides authentication, movie listings, and user preferences. Ensure the backend is running before launching the Flutter app.
 
 ## Security Notice
-To ensure security and prevent accidental exposure of sensitive credentials:
-
-- The `application.properties` file has been removed from the repository.
-- Firebase credentials (`firebase-service-account.json`) have been excluded from version control.
-- Make sure to configure these files locally before running the project.
+- Environment variables and API keys should be stored securely.
+- Do not hardcode sensitive information in the source code.
 
 ## Contact
-For credentials and support, reach out via GitHub: [NguyenDucTrung8149](https://github.com/NguyenDucTrung8149)
+For support, reach out via GitHub: [NguyenDucTrung8149](https://github.com/NguyenDucTrung8149)
