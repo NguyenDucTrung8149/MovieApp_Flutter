@@ -9,7 +9,7 @@ A mobile movie streaming application built with Flutter, supporting search, filt
 - **Cloud Services**: AWS Services
 
 ## Prerequisites
-1. Ensure the backend ([MovieWeb](https://github.com/nhattrinhnguyen1601/MovieWeb)) is set up and running.
+1. Ensure the backend ([MovieWeb](https://github.com/NguyenDucTrung8149/MovieWeb_Springboot)) is set up and running.
 2. Install Flutter SDK ([Flutter installation guide](https://docs.flutter.dev/get-started/install)).
 3. Install dependencies:
    ```sh
@@ -29,5 +29,5 @@ To generate a release APK, run:
 flutter build apk
 ```
 
-For further details, visit the [GitHub repository](https://github.com/nhattrinhnguyen1601/MovieApp).
+For further details, visit the [GitHub repository](https://github.com/NguyenDucTrung8149/MovieApp_Flutter).
 # MovieApp
