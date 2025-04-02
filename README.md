@@ -3,13 +3,13 @@
 A mobile movie streaming application built with Flutter, supporting search, filtering, favorites, history tracking, downloads, and notifications for new releases.
 
 ## Technologies
-- **Backend**: Spring Boot (Required: [MovieWeb](https://github.com/nhattrinhnguyen1601/MovieWeb))
+- **Backend**: Spring Boot (Required: [MovieWeb_Springboot](https://github.com/NguyenDucTrung8149/MovieWeb_Springboot))
 - **Frontend**: Flutter
 - **Database**: Firebase
 - **Cloud Services**: AWS Services
 
 ## Prerequisites
-1. Ensure the backend ([MovieWeb](https://github.com/NguyenDucTrung8149/MovieWeb_Springboot)) is set up and running.
+1. Ensure the backend ([MovieWeb_Springboot](https://github.com/NguyenDucTrung8149/MovieWeb_Springboot)) is set up and running.
 2. Install Flutter SDK ([Flutter installation guide](https://docs.flutter.dev/get-started/install)).
 3. Install dependencies:
    ```sh
